@@ -1,0 +1,162 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === Virtual Environment ===
+venv/
+env/
+ENV/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb
+
+# === Audio Files ===
+# Large audio datasets - uncomment if you want to exclude them
+UrbanSound8K/
+UrbanSound8K_mixed/
+UrbanSound8K_separation/
+
+# Generated/processed audio files
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.aac
+*.wma
+output_separated.wav
+
+# Exception: Keep small example files if needed
+# !examples/*.wav
+
+# === Machine Learning Models & Data ===
+# Trained models
+*.h5
+*.pth
+*.pkl
+*.joblib
+*.ckpt
+*.pb
+*.tflite
+*.onnx
+
+# Model checkpoints and logs
+checkpoints/
+logs/
+runs/
+tensorboard_logs/
+wandb/
+
+# Processed datasets and features
+*.npy
+*.npz
+processed_features.npy
+processed_labels.npy
+label_encoder.npy
+
+# Output directories
+output/
+results/
+predictions/
+experiments/
+saved_models/
+
+# === Data Files ===
+# Large data files
+*.csv
+*.json
+*.hdf5
+*.h5
+*.parquet
+
+# Exception: Keep metadata files if small
+!metadata.csv
+!UrbanSound8K/metadata/UrbanSound8K.csv
+!UrbanSound8K_mixed/metadata.csv
+
+# === IDE & Editor Files ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === System Files ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === Temporary Files ===
+*.tmp
+*.temp
+*.log
+*.out
+*.err
+temp/
+tmp/
+
+# === Google Colab / Drive ===
+# Colab temporary files
+.config/
+sample_data/
+
+# === Specific to Your Project ===
+# Archive directories (if they contain large datasets)
+archive/
+CRNN_dataset/
+CRNN_saved/
+CRNN_second_saved/
+efficientnet_model/
+SELD_saved/
+part2dumb/
+
+# Synthetic generated files
+synthetic_*.wav
+synthetic_*_timestamps.csv
+*_predictions.csv
+segments.csv
+
+# === Documentation (Optional) ===
+# Uncomment if you don't want to track documentation
+# *.md
+# docs/
+# documentation/
+
+# === Configuration Files ===
+# Keep essential config files but ignore sensitive ones
+config.json
+secrets.json
+.env.local
+.env.production
+credentials.json
