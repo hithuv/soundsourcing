@@ -106,16 +106,13 @@ This attempts to remove a specific sound from a mixed clip. **Note**: This part 
    python 1b_create_separation_dataset.py
    ```
 
-2. **Rename Training Script**: The training script's filename starts with a number, which prevents it from being imported. You must rename it.
-   - **From**: `4_train_separation_model.py`
-   - **To**: `train_separation_model.py`
 
-3. **Train the U-Net Model**: This will take a significant amount of time. It trains the U-Net architecture to generate separation masks.
+2. **Train the U-Net Model**: This will take a significant amount of time. It trains the U-Net architecture to generate separation masks.
    ```bash
-   python train_separation_model.py
+   python train_separation_model_4.py
    ```
 
-4. **Attempt Separation**: Open `5_separate_audio.py`. Edit the `MIXED_AUDIO_PATH` and `CLASS_TO_REMOVE` variables, then run the script. It will produce an `output_separated.wav` file.
+3. **Attempt Separation**: Open `5_separate_audio.py`. Edit the `MIXED_AUDIO_PATH` and `CLASS_TO_REMOVE` variables, then run the script. It will produce an `output_separated.wav` file.
    ```bash
    python 5_separate_audio.py
    ```
