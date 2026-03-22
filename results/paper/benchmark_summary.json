@@ -1,0 +1,50 @@
+{
+  "comparison": {
+    "metric": "mean_si_sdr_db (higher is better; active class channels only)",
+    "val_batches": 113,
+    "ranking": [
+      {
+        "model": "resattn_unet",
+        "checkpoint": "/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_144819_resattn_unet_balanced/checkpoints/best.pth",
+        "mean_si_sdr_db": -9.521338334065903e-15,
+        "mean_waveform_l1": 0.049297138045051404,
+        "si_sdr_pairs": 1123.0
+      },
+      {
+        "model": "tfctdf_unet",
+        "checkpoint": "/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_153410_tfctdf_unet_balanced/checkpoints/best.pth",
+        "mean_si_sdr_db": -1.8569424364220853e-07,
+        "mean_waveform_l1": 0.049297138045051404,
+        "si_sdr_pairs": 1123.0
+      },
+      {
+        "model": "baseline_unet",
+        "checkpoint": "/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_130340_baseline_unet_balanced/checkpoints/best.pth",
+        "mean_si_sdr_db": -0.21042674833434058,
+        "mean_waveform_l1": 0.04929711410117718,
+        "si_sdr_pairs": 1123.0
+      },
+      {
+        "model": "conv_tasnet",
+        "checkpoint": "/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_162114_conv_tasnet_balanced/checkpoints/best.pth",
+        "mean_si_sdr_db": -4.460742477677561,
+        "mean_waveform_l1": 0.04929106251045544,
+        "si_sdr_pairs": 1123.0
+      },
+      {
+        "model": "demucs_lite",
+        "checkpoint": "/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_224418_demucs_lite_balanced/checkpoints/best.pth",
+        "mean_si_sdr_db": -26.740189183926002,
+        "mean_waveform_l1": 0.04929683443021198,
+        "si_sdr_pairs": 1123.0
+      }
+    ]
+  },
+  "training_runs": {
+    "tfctdf_unet": "/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_153410_tfctdf_unet_balanced",
+    "baseline_unet": "/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_130340_baseline_unet_balanced",
+    "demucs_lite": "/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_224418_demucs_lite_balanced",
+    "resattn_unet": "/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_144819_resattn_unet_balanced",
+    "conv_tasnet": "/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_162114_conv_tasnet_balanced"
+  }
+}

@@ -1,0 +1,17 @@
+% \usepackage{booktabs}
+\begin{table}[t]
+\centering
+\caption{Separation models on the UrbanSound8K mixture validation split. Training loss is the objective in \texttt{train\_utils} (spectrogram vs.\ waveform). SI-SDR is mean over active class channels (RMS $> 10^{-3}$).}
+\label{tab:separation-benchmark}
+\begin{tabular}{lcccc}
+\toprule
+Model & Best val.\ loss & SI-SDR (dB) & WF L1 (eval) & Best ep. \\
+\midrule
+Baseline U-Net & 0.1011 & -0.210 & 0.0493 & 30 \\
+ResAttn U-Net & 0.1011 & -0.000 & 0.0493 & 1 \\
+TF–CTDF U-Net & 0.1011 & -0.000 & 0.0493 & 1 \\
+Conv-TasNet (lite) & 0.0123 & -4.461 & 0.0493 & 11 \\
+Demucs (lite) & 0.0123 & -26.740 & 0.0493 & 30 \\
+\bottomrule
+\end{tabular}
+\end{table}

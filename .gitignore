@@ -36,10 +36,12 @@ pip-delete-this-directory.txt
 *.ipynb
 
 # === Audio Files ===
-# Large audio datasets - uncomment if you want to exclude them
+# Large audio datasets (keep small CSV metadata where listed below)
 UrbanSound8K/
 UrbanSound8K_mixed/
-UrbanSound8K_separation/
+# Ignore generated mixture audio under separation; keep metadata CSV for the repo
+UrbanSound8K_separation/**
+!UrbanSound8K_separation/metadata.csv
 
 # Generated/processed audio files
 *.wav
@@ -72,26 +74,35 @@ runs/
 tensorboard_logs/
 wandb/
 
-# Processed datasets and features
-*.npy
+# Processed datasets and features (large arrays)
 *.npz
-processed_features.npy
-processed_labels.npy
-label_encoder.npy
+*.npy
+!output/label_encoder.npy
+output/processed_features.npy
+output/processed_labels.npy
 
-# Output directories
-output/
-results/
+# Output directory: ignore large model + features, not the whole folder
+output/sound_cnn_model.pth
+output/*.h5
+
+# Benchmark / training runs: track metrics, configs, paper exports; skip weights + generated audio
+results/**/checkpoints/*.pth
+results/**/checkpoints/*.pt
+results/**/audio_examples/**
+
 predictions/
-experiments/
 saved_models/
 
 # === Data Files ===
-# Large data files
+# Large generic dumps — allow benchmark tables and run metadata under results/
 *.csv
+!results/**/*.csv
+!UrbanSound8K_separation/metadata.csv
+
 *.json
+!results/**/*.json
+
 *.hdf5
-*.h5
 *.parquet
 
 # Exception: Keep metadata files if small
@@ -154,8 +165,8 @@ segments.csv
 # documentation/
 
 # === Configuration Files ===
-# Keep essential config files but ignore sensitive ones
-config.json
+# Ignore only root-level config if present; do not block results/**/config.json
+/config.json
 secrets.json
 .env.local
 .env.production

@@ -1,0 +1,6 @@
+model_key,model,best_val_loss_train,best_epoch,epochs_ran,elapsed_hours,mean_si_sdr_db,mean_waveform_l1_eval,si_sdr_pairs,run_dir
+baseline_unet,Baseline U-Net,0.10110068654196452,30,30,1.742708175579707,-0.21042674833434058,0.04929711410117718,1123.0,/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_130340_baseline_unet_balanced
+resattn_unet,ResAttn U-Net,0.10109933162421252,1,7,0.7629034006595612,-9.521338334065903e-15,0.049297138045051404,1123.0,/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_144819_resattn_unet_balanced
+tfctdf_unet,TF–CTDF U-Net,0.10109933162421252,1,7,0.7830218560165829,-1.8569424364220853e-07,0.049297138045051404,1123.0,/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_153410_tfctdf_unet_balanced
+conv_tasnet,Conv-TasNet (lite),0.01233142157357219,11,17,2.090846526953909,-4.460742477677561,0.04929106251045544,1123.0,/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_162114_conv_tasnet_balanced
+demucs_lite,Demucs (lite),0.012318457258387214,30,30,2.2562056960662207,-26.740189183926002,0.04929683443021198,1123.0,/Users/srihi/Study/Projects/akhil/soundsourcing/results/20260321_224418_demucs_lite_balanced
